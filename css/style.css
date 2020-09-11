@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 :root {
-	--primary: #394d79;
+	--primary: #232633;
 	--darker: #242424;
-	--secondary: #ff6600;
-	--bright: #ffca7b;
+	--secondary: #e3425a;
+	--bright: #e26d7f;
 	--main-text: #fff;
-	--highlight: #ffba28;
-	--high_grad: linear-gradient(45deg, #ff6600, #ffd270);
-	--medium_grad: linear-gradient(45deg, #394d79, #091555);
-	--ambient_grad: linear-gradient(90deg, #1d1d1d, #202d4a);
+	--highlight: #ff008d;
+	--high_grad: linear-gradient(45deg, #e60b5e, #e6107f);
+	--medium_grad: #787575;
+	--ambient_grad: #232633;
 }
 body {
 	color: var(--main-text);
@@ -673,17 +673,18 @@ h3.game_title {
 /*--//services--*/
 
 /*-- services bottom --*/
-.services-bottom-ltpwr-agileits{
-	background:url(../images/sbbg.jpg) no-repeat 0px 0px;
-	background-size:cover;
-	background-attachment:fixed;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	-ms-background-size:cover;
-	position:relative;
-	min-height:400px;
-	padding:100px 0px;
+.services-bottom-ltpwr-agileits {
+	background: linear-gradient(45deg, #d42020a8, #9c27b0a3), url(../images/sbbg.jpg) no-repeat 0px 0px;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	position: relative;
+	min-height: 400px;
+	padding: 100px 0px;
 }
 .wthree_info {
     width:100%;
@@ -752,7 +753,7 @@ a.learn:hover{
 }
 .footer-left-ltpwr ul li{
 	display:inline-block;
-	margin-bottom:35px;
+	margin-bottom:20px;
 }
 .footer-left-ltpwr .glyphicon{
 	font-size:16px;
@@ -1100,6 +1101,19 @@ figure.effect-zoe p.description > .button {
 	width: 100%;
 	height: 100%;
 
+}
+.video-responsive::before {
+	content: '';
+	background: url(http://img.mobilenobo.net/CqSSSkV3ZmlyEbS.png);
+	left: 0;
+	background-size: 4px;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	z-index: 6;
+	opacity: 0.7;
+	mix-blend-mode: multiply;
 }
 
 .canvas,
@@ -1625,7 +1639,7 @@ p.agileits{
 .navbar-default .navbar-nav > li > a {
 	font-family: "Kaushan Script", sans-serif;
 	font-size: 18px;
-	color: var(--bright);
+	color: var(--secondary);
 }
 .navbar:hover  #navbar > ul > li > a {
 	color: #fff;
@@ -2321,6 +2335,10 @@ li>a {
 }
 .vertical [type=checkbox]:checked ~ label ~ .content {
 	height:auto;
+}
+.footer-menu > li {
+	list-style: none;
+	margin-top: 20px;
 }
 @media all and (max-width: 980px) {
 	main .faqBox h2 {
