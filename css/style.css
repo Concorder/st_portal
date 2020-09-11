@@ -231,7 +231,7 @@ img {
 
 /*-- Banner-Slider --*/
 .slider {
-	max-height: 650px;
+	max-height: 90vh;
 	overflow: hidden;
 	position: relative;
 }
