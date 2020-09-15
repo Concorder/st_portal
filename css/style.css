@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
 :root {
 	--primary: #232633;
 	--darker: #242424;
@@ -15,7 +15,7 @@ body {
 	padding: 0;
 	margin: 0;
 	background: var(--ambient_grad);
-	font-family: 'open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 body a {
 	transition: 0.5s all;
@@ -39,7 +39,7 @@ input[type="button"], input[type="submit"] {
 	-ms-transition: 0.5s all;
 }
 h1, h2, h3, h4 {
-	font-family: 'Kaushan Script', sans-serif;
+	font-family: 'Racing Sans One', sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
 
@@ -393,7 +393,7 @@ padding: 70px 0 165px 0;
 	max-width: 220px;
 	text-align: center;
 	box-shadow: 0 5px 5px #00000033;
-	font-family: "Kaushan Script", sans-serif;
+	font-family: "Racing Sans One", sans-serif;
 	min-width: 100px;
 }
 .button.underline {
@@ -615,12 +615,13 @@ h3.game_title {
 	overflow: hidden;
 }
 .service-grid-agileits {
+	border-radius: 30px;
 	padding: 30px 5px;
 	margin: 0 10px;
 	width: calc(25% - 20px);
 	min-height: 300px;
 	margin-bottom: 90px;
-	background: #202d4ae0;
+	background: #00000094;
 	text-align: center;
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
@@ -709,6 +710,7 @@ a.learn{
 	padding:7px 15px;
 	display:inline-block;
 	margin-top:50px;
+	min-width: 130px;
 }
 a.learn:hover{
 	color:#fff;
@@ -1637,7 +1639,7 @@ p.agileits{
 	border: none;
 }
 .navbar-default .navbar-nav > li > a {
-	font-family: "Kaushan Script", sans-serif;
+	font-family: "Racing Sans One", sans-serif;
 	font-size: 18px;
 	color: var(--secondary);
 }
@@ -2565,7 +2567,7 @@ li>a {
 
 	.view h4 {
 		font-size: 1.8em;
-		font-family: "Kaushan Script", sans-serif;
+		font-family: "Racing Sans One", sans-serif;
 	}
 	.view p {
 		font-size: 12px;
@@ -2591,7 +2593,7 @@ li>a {
 	}
 	.footer-right-ltpwr p {
 		font-size: 13px;
-		line-height: 25px;
+		line-height: 17px;
 	}
 	p.agileinfo {
 		margin-top: 12px;
@@ -3038,6 +3040,25 @@ li>a {
 
 }
 @media screen and (max-width:640px){
+	.services-agileits-ltpwrlayouts {
+		background: url("../images/video-bg.jpg");
+		background-size: cover;
+		background-position: center;
+
+	}
+	.services-agileits-ltpwrlayouts:before {
+		content: '';
+		background: url(http://img.mobilenobo.net/CqSSSkV3ZmlyEbS.png);
+		left: 0;
+		background-size: 4px;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		position: absolute;
+		z-index: 6;
+		opacity: 0.7;
+		mix-blend-mode: soft-light;
+	}
 	.footer-left-ltpwr ul li h6 {
 		font-size: 14px;
 		margin-left: 5px;
@@ -3174,6 +3195,11 @@ li>a {
 	.agileits_reply input[type="text"], .agileits_reply input[type="email"] {
 		padding: 9px;
 	}
+	.footer-menu {
+		display: flex;
+		place-content: space-evenly;
+	}
+
 }
 @media screen and (max-width:480px){
 	.signUp .container {
@@ -3208,10 +3234,13 @@ li>a {
 	.services-bottom-ltpwr-agileits h3{
 		font-size:30px;
 	}
-	.wthree_info p {
-		font-size: 14px;
-		letter-spacing:1px;
-	}
+		.wthree_info p {
+			font-size: 14px;
+			letter-spacing: 1px;
+			display: block;
+			width: 80%;
+			margin: 0 auto;
+		}
 	.gallery-grid {
 		float: left;
 		width: calc(100% - 1em);
@@ -3384,6 +3413,9 @@ li>a {
 	}
 	.footer-right-ltpwr img {
 		width: 35%;
+		float: left;
+		margin-right: 20px;
+		margin-bottom: 30px;
 	}
 	.contact-left-agile {
 		width: 100%;
