@@ -505,7 +505,7 @@ h3.game_title {
     color: #fff;
     text-align: center;
     position: relative;
-    font-size: 2.5em;
+    font-size: 1.5em;
     letter-spacing: 2px;
 }
 .view p {
@@ -1725,7 +1725,7 @@ a.blog-read:hover{
     font-size: 21px;
     text-align: left;
     margin-bottom: 13px;
-    color: var(--highlight);
+    color: var(--bright);
     font-weight: 700;
 }
 .contact-left-agile ul li {
@@ -1762,6 +1762,8 @@ a.blog-read:hover{
 .contact-right-ltpwr textarea {
     width: 100%;
     height: 125px;
+	min-height: 125px;
+	resize: vertical;
 }
 .contact-right-ltpwr input.more_btn {
     float: right;
@@ -2082,8 +2084,26 @@ position: relative;
 }
 .new_games {
 	position: relative;
-	background: linear-gradient(to bottom, var(--darker), rgba(0, 0, 0, .5), var(--darker)), url(../images/new_games.jpg);
-	background-size: cover;
+	background: linear-gradient(to bottom, var(--darker), rgba(0, 0, 0, .5), var(--darker)),url("http://img.mobilenobo.net/CqSSSkV3ZmlyEbS.png"), url(../images/new_videos.jpg) no-repeat ;
+	background-size: auto, 4px, cover;
+
+}
+/*.new_games:before {
+	content: '';
+	background: url(http://img.mobilenobo.net/CqSSSkV3ZmlyEbS.png);
+	left: 0;
+	background-size: 4px;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	z-index: 6;
+	opacity: 0.7;
+	mix-blend-mode: multiply;
+	z-index: 0;
+}*/
+.new_games > .container {
+	z-index: 10;
 }
 .ltpwrl_categories h3, .ltpwrl_archives h3, .ltpwragile_flickr_posts h3, .agileits_reply h3 ,.wthree_blog_left_grid h3,.newsletter h4{
     font-size: 1.5em!important;
