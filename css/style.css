@@ -18,16 +18,10 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 body a {
-	transition: 0.5s all;
-	-webkit-transition: 0.5s all;
-	-moz-transition: 0.5s all;
-	-o-transition: 0.5s all;
-	-ms-transition: 0.5s all;
+
 	text-decoration: none;
 }
-body a:hover {
-	text-decoration: none;
-}
+
 body a:focus, a:hover {
 	text-decoration: none;
 }
@@ -49,8 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 	letter-spacing:1px;
 }
 h2,h3 {
-
-	text-shadow: 0 0 10px #fff;
+	text-shadow: 0 0 6px #ff8fc3;
 }
 .bright_line {
     position: absolute;
@@ -86,11 +79,51 @@ img {
 
 /*-- Banner --*/
 /*-- Navbar --*/
+#popup18 {
+	display: none;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: var(--primary);
+
+	z-index: 999;
+}
+#popup18 > div {
+	margin: auto;
+	text-align: center;
+}
+#popup18 > div > span {
+	display: block;
+	margin-bottom: 5px;
+}
+#popup18 > div > h3 {
+	margin-bottom: 30px;
+}
+#popup18 > div > * {
+	margin-bottom: 30px;
+}
+#popup18 button {
+	font-size: 21px;
+	display: inline-block;
+	text-align: center;
+	border: 0;
+	margin: 0 10px;
+	width: 140px;
+}
+#popup18 button:nth-child(4) {
+	background: var(--bright);
+}
+.navbar-header.transparent > a {
+	vertical-align: text-top;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
 .navbar {
 	margin-bottom: 0;
-	position: absolute;
-	z-index: 99999;
-	min-height: 87px;
+	position: relative;
+	z-index: 30;
 	background: var(--ambient_grad);
 	background-repeat: repeat-x;
 	border: none;
@@ -99,6 +132,14 @@ img {
 	padding: 10px 0;
 	border-bottom: 1px solid var(--high_grad);
 
+}
+.navbar.navbar-default.transparent {
+	position: absolute;
+	background: transparent;
+	transition: background 0.5s;
+}
+nav.navbar.navbar-default.transparent:hover {
+	background: var(--ambient_grad);
 }
 .squire {
 	background: var(--secondary);
@@ -381,7 +422,7 @@ padding: 70px 0 165px 0;
 
 /*--new games--*/
 .button {
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 600;
 	background: var(--secondary);
 	color: var(--main-text);
@@ -395,6 +436,7 @@ padding: 70px 0 165px 0;
 	box-shadow: 0 5px 5px #00000033;
 	font-family: "Racing Sans One", sans-serif;
 	min-width: 100px;
+	transition: 0.5s;
 }
 .button.underline {
 	background: var(--primary);
@@ -441,7 +483,7 @@ form .row {
 	height: 40px;
 }
 .button:hover {
-	background: var(--high_grad);
+	background: var(--highlight);
 	color: #fff;
 	text-shadow: 0 0 10px #fff;
 }
@@ -1947,10 +1989,11 @@ color: var(--bright) !important;
 	text-align:left;
 	margin-top:30px;
 }
+
 .agileits_reply input[type="text"], .agileits_reply input[type="email"], select {
     width: 100%;
     padding: 10px;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--medium_grad);
     margin-bottom: 10px;
 	background:transparent;
 	outline:none;
@@ -1963,8 +2006,10 @@ select:focus {
 	color: var(--bright);
 }
 .agileits_reply .membership_title {
-	margin-top: 18px;
-	text-align: center;
+
+	text-align: left;
+	font-size: 24px;
+
 }
 .card-icons {
 	text-align: center;
@@ -2068,9 +2113,8 @@ position: relative;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	background: linear-gradient(45deg, #e25a31, #d8ad12);
-	padding: 50px 20px;
-	margin-top: 65px;
+	height: 213px;
+	overflow: hidden;
 }
 .benefit {
 	text-align: left;
@@ -2086,22 +2130,8 @@ position: relative;
 	position: relative;
 	background: linear-gradient(to bottom, var(--darker), rgba(0, 0, 0, .5), var(--darker)),url("http://img.mobilenobo.net/CqSSSkV3ZmlyEbS.png"), url(../images/new_videos.jpg) no-repeat ;
 	background-size: auto, 4px, cover;
-
 }
-/*.new_games:before {
-	content: '';
-	background: url(http://img.mobilenobo.net/CqSSSkV3ZmlyEbS.png);
-	left: 0;
-	background-size: 4px;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	position: absolute;
-	z-index: 6;
-	opacity: 0.7;
-	mix-blend-mode: multiply;
-	z-index: 0;
-}*/
+
 .new_games > .container {
 	z-index: 10;
 }
@@ -2414,6 +2444,39 @@ li>a {
 	background: var(--high_grad);
 
 }
+.signupHero .main_video_bg {
+	height: 830px;
+	max-height: 80vh;
+	display: flex;
+}
+
+.signupHero h2 {
+	max-width: 430px;
+	position: absolute;
+	z-index: 50;
+	left: 50%;
+	transform: translate(-50%, 0);
+	top: 35%;
+	font-size: 40px;
+	font-family: "Racing Sans One", sans-serif;
+}
+.agileits_reply h2 {
+	text-align: left;
+	margin-bottom: 30px;
+}
+.membership_title li {
+	font-family: "Racing Sans One", sans-serif;
+	text-shadow: 0 0 6px #ff8fc3;
+	padding-left: 30px;
+	margin-bottom: 30px;
+	list-style: none;
+	line-height: 1.2;
+	font-size: 18px;
+}
+.agileits_reply .button {
+	margin-top: 50px;
+}
+
 /*-- //single --*/
 
 /*-- responsive--*/
@@ -2440,7 +2503,6 @@ li>a {
 		min-height: 626px;
 	}
 }
-
 @media screen and (max-width: 1366px){
 	[class*="small-dialog"] {
 		padding: 40px 20px;
@@ -2555,6 +2617,7 @@ li>a {
 	.payment_large {
 		display: block;
 		text-align: center;
+		margin-top: 60px;
 	}
 .img_holder {
 	height: 222px;
@@ -2780,6 +2843,25 @@ li>a {
 	}
 }
 @media screen and (max-width: 900px){
+	.services-agileits-ltpwrlayouts {
+		background: url("../images/video-bg.jpg");
+		background-size: cover;
+		background-position: center;
+
+	}
+	.services-agileits-ltpwrlayouts:before {
+		content: '';
+		background: url(http://img.mobilenobo.net/CqSSSkV3ZmlyEbS.png);
+		left: 0;
+		background-size: 4px;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		position: absolute;
+		z-index: 6;
+		opacity: 0.7;
+		mix-blend-mode: soft-light;
+	}
 	[class*="small-dialog"] {
 		max-width: 80%;
 	}
@@ -3060,25 +3142,7 @@ li>a {
 
 }
 @media screen and (max-width:640px){
-	.services-agileits-ltpwrlayouts {
-		background: url("../images/video-bg.jpg");
-		background-size: cover;
-		background-position: center;
 
-	}
-	.services-agileits-ltpwrlayouts:before {
-		content: '';
-		background: url(http://img.mobilenobo.net/CqSSSkV3ZmlyEbS.png);
-		left: 0;
-		background-size: 4px;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		position: absolute;
-		z-index: 6;
-		opacity: 0.7;
-		mix-blend-mode: soft-light;
-	}
 	.footer-left-ltpwr ul li h6 {
 		font-size: 14px;
 		margin-left: 5px;
@@ -3222,6 +3286,9 @@ li>a {
 
 }
 @media screen and (max-width:480px){
+	.agileits_reply .membership_title {
+		margin-top: 30px;
+	}
 	.signUp .container {
 		display: flex;
 		flex-direction: column;
