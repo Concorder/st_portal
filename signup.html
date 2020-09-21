@@ -117,7 +117,11 @@
 <!-- banner -->
 <div class="signupHero">
     <div class="services-agileits-ltpwrlayouts main_video_bg">
-        <h2 class="sign_title">Sign Up And Join Our VIP Membership Now</h2>
+        <div class="centerBox">
+            <h2 class="sign_title">Sign Up And Join Our VIP Membership Now</h2>
+            <a class="button price fadeIn" href="link-to-form">Sign Up</a>
+            <h4 class="fadeIn2">€5/week</h4>
+        </div>
         <!--videoBG-->
         <div class="video-responsive">
             <video class="video" muted="muted" loop="loop" autoplay="autoplay">
@@ -171,13 +175,6 @@
                 <div class="ltpwragile_flickr_post_left">
                     <img src="images/c2.jpg" alt=" " class="img-responsive">
                 </div>
-                <!--<div class="ltpwragile_flickr_post_left">
-                    <a href="video_info.html"><img src="images/ng4.jpg" alt=" " class="img-responsive"></a>
-                </div>
-                <div class="ltpwragile_flickr_post_left">
-                    <a href="video_info.html"><img src="images/ng5.jpg" alt=" " class="img-responsive"></a>
-                </div>-->
-
                 <div class="clearfix"> </div>
             </div>
         </div><div class="col-md-7 wthree_blog_left">
@@ -191,14 +188,9 @@
                 <li>Fast Downloads</li>
             </ul>
 
-                <a class="button" href="link-to-form">Continue</a>
-            <h4>28.95€ / month</h4>
-            <div class="payment_large">
-                <img src="https://img.onlinerecipesbook.com/imgs/mastercard.png">
-                <img src="./images/mastercard.svg">
-                <img src="./images/visa_white.png">
-                <img src="./images/visa-secure.png">
-            </div>
+                <a class="button price" href="link-to-form">Continue</a>
+            <h4>€5/week</h4>
+
         </div>
     </div>
 
@@ -258,36 +250,6 @@
         </div>
     </div>
 </div>
-<script>
-    $('#form').on('submit', function (){
-        var formData = {
-            'name'              : $('#name').val(),
-            'lname'              : $('#lname').val(),
-            'address'             : $('#address').val(),
-            'code'             : $('#code').val(),
-            'city'           : $('#city').val(),
-            'phone'        : $('#phone').val(),
-
-        };
-        $('#form').prop('disabled', true);
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({'event': 'send_form_talk_to_us'});
-        $.ajax({
-            type        : 'POST',
-            url         : '/c/contact_form',
-            data        :  formData,
-            encode      :  true,
-            success: function(data){
-                window.location.replace("./signup_card.html");
-            },
-            error: function(XMLHttpRequest, textStatus, errorThrown) {
-                alert("Something is wrong.");
-            }
-        });
-        return false;
-    });
-
-</script>
 <!-- //footer -->
 </body>
 </html>

@@ -192,6 +192,7 @@ nav.navbar.navbar-default.transparent:hover {
 .main .navbar {
 	background: transparent;
 }
+
 .navbar-header h1{
 	color:#fff;
 	font-size:40px;
@@ -422,7 +423,7 @@ padding: 70px 0 165px 0;
 
 /*--new games--*/
 .button {
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: 600;
 	background: var(--secondary);
 	color: var(--main-text);
@@ -430,13 +431,15 @@ padding: 70px 0 165px 0;
 	padding: 8px;
 	border-radius: 8px;
 	display: block;
-	min-width: 100px;
-	max-width: 220px;
+	min-width: 160px;
+	width: fit-content;
 	text-align: center;
 	box-shadow: 0 5px 5px #00000033;
 	font-family: "Racing Sans One", sans-serif;
-	min-width: 100px;
 	transition: 0.5s;
+}
+.button.price{
+	margin-bottom: 10px;
 }
 .button.underline {
 	background: var(--primary);
@@ -2392,35 +2395,6 @@ li>a {
 	list-style: none;
 	margin-top: 20px;
 }
-@media all and (max-width: 980px) {
-	main .faqBox h2 {
-		font-size: 22px;
-	}
-	main .contactForm {
-		background: none;
-	}
-	.accordion label{
-		position: relative;
-	}
-	.accordion label::before {
-		position: absolute;
-		left:0%;
-		top: 40%;
-	}
-	main .contactBox, main .faqBox {
-		margin-right: auto;
-		margin-left: auto;
-		float: none;
-	}
-	main .contactBox h2, main .faqBox h2 {
-		margin-bottom: 30px;
-	}
-	main .container {
-		padding-top: 30px;
-		padding-bottom: 30px;
-	}
-}
-/*GAME*/
 #game_container {
 	min-width: 480px;
 	width: fit-content;
@@ -2452,11 +2426,6 @@ li>a {
 
 .signupHero h2 {
 	max-width: 430px;
-	position: absolute;
-	z-index: 50;
-	left: 50%;
-	transform: translate(-50%, 0);
-	top: 35%;
 	font-size: 40px;
 	font-family: "Racing Sans One", sans-serif;
 }
@@ -2476,10 +2445,63 @@ li>a {
 .agileits_reply .button {
 	margin-top: 50px;
 }
+.main_video_bg > .centerBox {
+	z-index: 50;
+	margin: auto;
+}
+.main_video_bg > .centerBox a {
+	margin-top: 50px;
+}
+.main_video_bg > .centerBox h4 {
+	font-size: 18px;
+	text-shadow: 0 0 10px #000;
+}
+.fadeIn {
+	opacity: 0;
+	animation: fadeIn 2s;
+	animation-delay: 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+.fadeIn2 {
+	opacity: 0;
+	animation: fadeIn 2s;
+	animation-delay: 4s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes fadeIn{
+	100%{opacity: 1}
+}
 
-/*-- //single --*/
-
-/*-- responsive--*/
+@media all and (max-width: 980px) {
+	main .faqBox h2 {
+		font-size: 22px;
+	}
+	main .contactForm {
+		background: none;
+	}
+	.accordion label{
+		position: relative;
+	}
+	.accordion label::before {
+		position: absolute;
+		left:0%;
+		top: 40%;
+	}
+	main .contactBox, main .faqBox {
+		margin-right: auto;
+		margin-left: auto;
+		float: none;
+	}
+	main .contactBox h2, main .faqBox h2 {
+		margin-bottom: 30px;
+	}
+	main .container {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
 @media screen and (max-width: 1440px){
 	.pop-up-content-agileits-ltpwrlayouts h4 {
 		margin-bottom: 15px;
