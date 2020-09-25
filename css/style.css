@@ -617,7 +617,7 @@ h3.game_title {
 	transform: translate(-100vh, 0);
 }
 .view-eighth:hover a {
-	transition: 1s;
+	transition: 0.3s;
 	transform: translate(0,0);
 }
 
@@ -2229,6 +2229,15 @@ li>a {
 	color: var(--bright);
 	text-decoration: underline;
 }
+.terms li {
+	list-style: initial;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+.terms p {
+	display: block;
+	margin-bottom: 20px;
+}
 .terms table {
 	margin-top: 30px;
 	margin-bottom: 30px;
@@ -2246,7 +2255,7 @@ li>a {
 	margin-top: 15px;
 }
 .game .wthree_blog_left ul a {
-	color: var(--secondary);
+	color: var(--medium_grad);
 	margin: 0 10px 0 0;
 
 }
@@ -2472,6 +2481,15 @@ li>a {
 }
 @keyframes fadeIn{
 	100%{opacity: 1}
+}
+.videoPlayer {
+	width: 100%;
+}
+.videoPlayer {
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: 2px 20px 16px -16px #000000bd;
+	outline: 0;
 }
 
 @media all and (max-width: 980px) {
