@@ -139,7 +139,7 @@ img {
 	transition: background 0.5s;
 }
 nav.navbar.navbar-default.transparent:hover {
-	background: var(--ambient_grad);
+	background: #23263382;
 }
 .squire {
 	background: var(--secondary);
