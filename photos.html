@@ -20,12 +20,13 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/popup-box.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/gallery.css">
     <!--// css -->
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="./zoom/medium-zoom.js"></script>
+    <script src="js/gallery.js"></script>
 </head>
 <body class="pictures">
 <!-- Google Tag Manager (noscript) -->
@@ -118,74 +119,20 @@
 <!-- banner -->
 <div class="gallery-ltpwrlayouts" id="gallery">
 
-    <div class="container">
-        <h2>Photos</h2>
-        <div class="gallery-grids">
-            <div class="new-grid-ltpwrl gallery-grid view view-eighth zoom-img">
-                <img class="img " src="./images/video-bg.jpg" alt=" ">
-                
-            </div>
-            <div class="new-grid-ltpwrl gallery-grid view view-eighth zoom-img">
-                <img class="img " src="images/hero5.jpg" alt=" ">
-                
-            </div>
-            <div class="new-grid-ltpwrl gallery-grid view view-eighth zoom-img">
-                <img class="img " src="images/hero2.jpg" alt=" ">
-                
-            </div>
-            <div class="new-grid-ltpwrl gallery-grid view view-eighth zoom-img">
-                <img class="img " src="images/440x280vert.jpg" alt=" ">
-                
-            </div>
-            <div class="new-grid-ltpwrl gallery-grid view view-eighth zoom-img">
-                <img class="img " src="images/440x280.jpg" alt=" ">
-                
-            </div>
-            <div class="new-grid-ltpwrl gallery-grid view view-eighth zoom-img">
-                <img class="img " src="images/440x280.jpg" alt=" ">
-                
-            </div>
-            <div class="new-grid-ltpwrl gallery-grid view view-eighth zoom-img">
-                <img class="img " src="images/440x280.jpg" alt=" ">
-                
-            </div>
-            <div class="new-grid-ltpwrl gallery-grid view view-eighth ">
-                <img class="img " src="images/440x280.jpg" alt=" ">
-            </div>
-            <div class="new-grid-ltpwrl gallery-grid view view-eighth zoom-img">
-                <img class="img" src="images/440x280.jpg" alt=" ">
-                
-            </div>
-            <div class="new-grid-ltpwrl gallery-grid view view-eighth zoom-img">
-                <img class="img" src="images/440x280.jpg" alt=" ">
-                
-            </div>
-            <div class="new-grid-ltpwrl gallery-grid view view-eighth zoom-img">
-                <img class="img" src="images/440x280.jpg" alt=" ">
-                
-            </div>
-            <div class="new-grid-ltpwrl gallery-grid view view-eighth zoom-img">
-                <img class="img" src="images/440x280.jpg" alt=" ">
-                
-            </div>
-            <div class="new-grid-ltpwrl gallery-grid view view-eighth zoom-img">
-                <img class="img" src="images/440x280.jpg" alt=" ">
-                
-            </div>
-            <div class="new-grid-ltpwrl gallery-grid view view-eighth zoom-img">
-                <img class="img" src="images/440x280.jpg" alt=" ">
-                
-            </div>
-            <div class="new-grid-ltpwrl gallery-grid view view-eighth zoom-img">
-                <img class="img" src="images/440x280.jpg" alt=" ">
-                 
-            </div>
-            <div class="new-grid-ltpwrl gallery-grid view view-eighth zoom-img">
-                <img class="img" src="images/440x280.jpg" alt=" ">
+    <div class="container p-3">
 
-            </div>
-            <div class="clearfix"> </div>
+        <div class="fg-gallery">
+            <img src="./images/video-bg.jpg" alt="">
+            <img src="images/hero5.jpg" alt="">
+            <img src="images/hero2.jpg" alt="">
+            <img src="images/440x280.jpg" alt="">
+            <img src="images/440x280.jpg" alt="">
+            <img src="images/440x280.jpg" alt="">
+            <img src="images/440x280.jpg" alt="">
+            <img src="images/440x280.jpg" alt="">
+
         </div>
+
     </div>
     <nav class="game_list" aria-label="Game_list">
         <ul class="pagination">
@@ -256,18 +203,26 @@
         </div>
     </div>
 </div>
+
 <script>
-    $(document).ready(function(){
-        $('.gallery-grid').on('hover', function(){
-            console.log('wer')
-            $(this).toggleClass('clickable');
-        });
+    var a = new FgGallery('.fg-gallery', {
+        cols: 3,
+        style: {
+            border: '0px solid #fff',
+            height: '240px',
+            borderRadius: '5px',
+            boxShadow: '0 2px 10px -5px #858585',
+        }
     })
 
-</script>
-
-<script>
-    Zoomerang.listen('.img')
+    // var a = new FgGallery('.ns', {
+    //     cols: 3,
+    //     style: {
+    //         border: '0 solid #fff',
+    //         height: '240px',
+    //         borderRadius: '5px',
+    //     }
+    // })
 </script>
 <!-- //footer -->
 
