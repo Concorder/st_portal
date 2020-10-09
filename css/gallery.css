@@ -85,6 +85,10 @@
             animation: scale .3s .3s ease forwards;
     box-shadow: 0 0 180px 0 rgb(24, 24, 24);
     border-radius: 5px;
+    width: unset;
+    max-height: 100%;
+    max-width: 100%;
+    user-select: none;
 }
 @-webkit-keyframes scale {
     to { opacity: 1; visibility: visible; -webkit-transform: scale(1); transform: scale(1) }
