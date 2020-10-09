@@ -83,7 +83,7 @@
     visibility: hidden;
     -webkit-animation: scale .3s .3s ease forwards;
             animation: scale .3s .3s ease forwards;
-    box-shadow: 0 0 180px 0 rgb(24, 24, 24);
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0);
     border-radius: 5px;
     width: unset;
     max-height: 100%;
