@@ -199,6 +199,7 @@ nav.navbar.navbar-default.transparent:hover {
 }
 .navbar-header img{
 	width:160px;
+	margin-top: 20px;
 }
 .navbar-nav>li {
 	padding: 5px 15px;
