@@ -553,6 +553,9 @@ h3.game_title {
     position: relative;
     font-size: 1.5em;
     letter-spacing: 2px;
+	max-width: 100%;
+	padding: 0 15px;
+	
 }
 .view p {
    font-size: 1em;
@@ -2742,6 +2745,7 @@ li>a {
 	.view h4 {
 		font-size: 1.8em;
 		font-family: "Racing Sans One", sans-serif;
+
 	}
 	.view p {
 		font-size: 12px;
