@@ -2485,14 +2485,46 @@ li>a {
 @keyframes fadeIn{
 	100%{opacity: 1}
 }
-.videoPlayer {
-	width: 100%;
+.wthree_blog_left_grid_slider {
+	position: relative;
 }
 .videoPlayer {
+	position: relative;
 	width: 100%;
 	border-radius: 10px;
 	box-shadow: 2px 20px 16px -16px #000000bd;
 	outline: 0;
+}
+.bigPlayButton {
+	z-index: 20;
+	position: absolute;
+	max-width: 90px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+}
+.nocredits {
+	position: relative;
+
+}
+.nocredits .videoPlayer {
+	filter: brightness(0.3);
+}
+.nocredits  p {
+	text-align: center;
+}
+.nocredits a {
+	color: var(--highlight);
+}
+.nocredits > div {
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	min-width: 290px;
 }
 .footer > div > div.col-md-5.footer-left-ltpwr > ul:nth-child(3),
 .footer > div > div.col-md-5.footer-left-ltpwr > ul:nth-child(4)
