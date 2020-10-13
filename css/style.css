@@ -1894,7 +1894,7 @@ color: var(--bright) !important;
 .blog{
     background: var(--ambient_grad);
 	color: var(--main-text);
-	min-height: 80vh;
+	min-height: 60vh;
 }
 
 .wthree_blog_left_grid h4 {
@@ -2525,7 +2525,7 @@ li>a {
 	top: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
-	min-width: 290px;
+	min-width: 292px;
 }
 .footer > div > div.col-md-5.footer-left-ltpwr > ul:nth-child(3),
 .footer > div > div.col-md-5.footer-left-ltpwr > ul:nth-child(4)
