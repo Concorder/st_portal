@@ -36,9 +36,7 @@
 <!-- banner -->
 <div class="sub-banner">
     <!-- Navbar -->
-    <nav class="navbar navbar-default">
-        <div class="superheader"></div>
-        <div class="bright_line"></div>
+    <nav class="navbar navbar-default" id="anch_target">
 
         <div class="container">
 
@@ -49,26 +47,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a  href="index.html" class="logo"><img src="./images/joy_logo_small.png" alt=""></a>
+                <a href="index.html"><img src="./images/joy_logo.png" alt=""></a>
             </div>
 
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hover-effect"><a href="index.html">Home</a></li>
-                    <li class="hover-effect"><a href="about.html">About</a></li>
-                    <li class="hover-effect"><a href="videos.html">Games</a></li>
-                    <li class="hover-effect"><a href="news.html">News</a></li>
-                    <li class="hover-effect active"><a href="contactus.html">Contact</a></li>
-                    <!--<li id="#login"><a href="">Login</a></li>-->
-                    <li ><a id="profile" href="./profile.html"><?xml version="1.0" encoding="iso-8859-1"?>
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             viewBox="0 0 478.024 478.024" style="enable-background:new 0 0 478.024 478.024; " xml:space="preserve">
+                    <li class="hover-effect "><a href="index.html">Home</a></li>
+                    <li class="hover-effect"><a href="videos.html">Videos</a></li>
+                    <li class="hover-effect"><a href="photos.html">Photos</a></li>
+                    <li class="hover-effect"><a href="contactus.html">Support</a></li>
+                    <li><a id="profile" href="./profile.html"><!--?xml version="1.0" encoding="iso-8859-1"?-->
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 478.024 478.024" style="enable-background:new 0 0 478.024 478.024; " xml:space="preserve">
                      <defs>
    <filter id="f1" x="0" y="0" width="200%" height="200%">
-      <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0" />
+      <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0"></feOffset>
 
-       <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10" />
-       <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+       <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10"></feGaussianBlur>
+       <feBlend in="SourceGraphic" in2="blurOut" mode="normal"></feBlend>
     </filter>
   </defs>
 
@@ -106,7 +101,7 @@
 			C172.612,211.334,160.951,169.713,179.43,136.849z M405.753,357.336L405.753,357.336c-10.952-51.083-44.59-94.39-91.375-117.64
 			c38.245-41.661,35.475-106.438-6.186-144.683c-41.661-38.245-106.438-35.475-144.683,6.186
 			c-35.954,39.166-35.954,99.332,0,138.497c-46.785,23.251-80.423,66.557-91.375,117.64C6.69,265.153,28.366,137.371,120.549,71.927
-			s219.965-43.768,285.409,48.415c24.601,34.653,37.807,76.104,37.786,118.602C443.744,281.405,430.46,322.802,405.753,357.336z" filter="url(#f1)"/>
+			s219.965-43.768,285.409,48.415c24.601,34.653,37.807,76.104,37.786,118.602C443.744,281.405,430.46,322.802,405.753,357.336z" filter="url(#f1)"></path>
 </g></g>
 </svg></a>
                         <ul id="sub_menu">
@@ -115,6 +110,7 @@
                         </ul>
                     </li>
                 </ul>
+
             </div>
 
         </div>
@@ -127,21 +123,16 @@
         <h2>Login</h2>
 
         <div class="col-md-12 contact-right-ltpwr framed">
-            <p class="form_descr"><i class="round_num">1.</i>Enter the email address you entered when registering which serves as your login and your password.</p>
+            <p class="form_descr"><i class="round_num">1.</i>Enter the phone number you entered when registering which serves as your login, and your password.</p>
             <form id="home-option1-form" role="form">
                 <div class="row">
                     <div class="row">
-                            <div class="form-group col-sm-4">
-                                <label for="home-option1-email-input">Email</label>
-                                <div>
-                                    <input type="email" class="form-control required input form-input" pattern=".{6,}" name="home-option1-email-input" id="home-option1-email-input" placeholder="Email" required="">
-                                </div>
-                            </div>
 
-                            <div class="form-group col-sm-4">
-                                <label for="home-option1-password-input">Password</label>
+
+                            <div class="form-group col-sm-6">
+                                <label for="home-option1-password-input">Phone Number</label>
                                 <div>
-                                    <input type="password" class="form-control required input form-input" name="home-option1-password-input" id="home-option1-password-input" placeholder="Password" required="">
+                                    <input type="password" class="form-control required input form-input" name="home-option1-password-input" id="home-option1-password-input" placeholder="" required="">
                                 </div>
                             </div>
                             <div class="form-group col-sm-4">
@@ -160,23 +151,16 @@
         </div>
 
         <div class="col-md-12 contact-right-ltpwr framed">
-            <p class="form_descr"><i class="round_num">2.</i>Forgot your login details? Enter your email to recover your password.</p>
+            <p class="form_descr"><i class="round_num">2.</i>Forgot your login details? Contact us.</p>
             <form id="home-option3-form" role="form">
                 <div class="row">
-                    <div class="col-lg-8 col-sm-8">
-                        <div class="form-group">
-                            <label for="home-option3-email-input">Email</label>
-                            <div>
-                                <input type="email" class="form-control required input form-input" pattern=".{6,}" name="home-option3-email-input" id="home-option3-email-input" placeholder="Email" required="">
-                            </div>
-                        </div>
-                    </div>
+
 
                     <div class="col-lg-4 col-sm-4">
                         <div class="form-group form-group-submit-btn">
-                            <button type="submit" id="home-option3-submit-btn" class="btn btn-secondary button">
-                                Recover Password
-                            </button>
+                            <a href="contactus.html" id="home-option3-submit-btn" class="btn btn-secondary button">
+                                Contact Us
+                            </a>
                         </div>
                     </div>
                 </div>
