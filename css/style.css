@@ -936,6 +936,13 @@ input::-webkit-inner-spin-button {
 .login_page .form_descr {
 	margin-top: 30px;
 }
+.link_to {
+	color: var(--bright);
+	
+}
+.link_to:hover {
+	color: var(--secondary);
+}
 .profile_page .framed {
 	border: 1px solid var(--primary);
 	padding: 20px;
