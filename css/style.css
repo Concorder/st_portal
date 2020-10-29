@@ -944,7 +944,7 @@ input::-webkit-inner-spin-button {
 	color: var(--secondary);
 }
 .profile_page .framed {
-	border: 1px solid var(--primary);
+	border: 1px solid var(--bright);
 	padding: 20px;
 	border-radius: 20px;
 	margin-bottom: 10px;
@@ -1168,7 +1168,7 @@ figure.effect-zoe p.description > .button {
 }
 .video-responsive::before {
 	content: '';
-	background: url(http://img.mobilenobo.net/CqSSSkV3ZmlyEbS.png);
+	background: url(../images/pixel_grid.png);
 	left: 0;
 	background-size: 4px;
 	right: 0;
@@ -2014,7 +2014,7 @@ color: var(--bright) !important;
 .agileits_reply input[type="text"], .agileits_reply input[type="email"], select {
     width: 100%;
     padding: 10px;
-    border: 1px solid var(--medium_grad);
+    border: 1px solid var(--bright);
     margin-bottom: 10px;
 	background:transparent;
 	outline:none;
@@ -2044,7 +2044,7 @@ select:focus {
 .agileits_reply  textarea{
     width: 100%;
     padding: 10px;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--bright);
 	margin-bottom:15px;
 	height:150px;
 	resize:none;
@@ -2149,7 +2149,7 @@ position: relative;
 }
 .new_games {
 	position: relative;
-	background: linear-gradient(to bottom, var(--darker), rgba(0, 0, 0, .5), var(--darker)),url("http://img.mobilenobo.net/CqSSSkV3ZmlyEbS.png"), url(../images/new_videos.jpg) no-repeat ;
+	background: linear-gradient(to bottom, var(--darker), rgba(0, 0, 0, .5), var(--darker)),url("../images/pixel_grid.png"), url(../images/new_videos.jpg) no-repeat ;
 	background-size: auto, 4px, cover;
 }
 
@@ -2968,6 +2968,9 @@ li>a {
 	max-height: 100vh;
 }
 @media screen and (max-width: 900px){
+	.bigPlayButton {
+		display: none;
+	}
 	.services-agileits-ltpwrlayouts {
 		background: url("../images/video-bg.jpg");
 		background-size: cover;
@@ -2980,7 +2983,7 @@ li>a {
 	}
 	.services-agileits-ltpwrlayouts:before {
 		content: '';
-		background: url(http://img.mobilenobo.net/CqSSSkV3ZmlyEbS.png);
+		background: url(../images/pixel_grid.png);
 		left: 0;
 		background-size: 4px;
 		right: 0;
