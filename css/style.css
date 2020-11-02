@@ -2993,6 +2993,7 @@ li>a {
 		z-index: 6;
 		opacity: 0.7;
 		mix-blend-mode: soft-light;
+		pointer-events: none;
 	}
 	[class*="small-dialog"] {
 		max-width: 80%;
