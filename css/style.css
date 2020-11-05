@@ -361,9 +361,16 @@ ul.callbacks_tabs.callbacks1_tabs {
 .trend-grid{
 	padding:0 15px;
 }
-.trend-ltpwrlayouts h4,.services-agileits-ltpwrlayouts h4{
+.services-agileits-ltpwrlayouts h4{
 	color:var(--main-text);
 	margin-bottom:20px;
+}
+.trend-ltpwrlayouts h4 {
+	color:var(--main-text);
+	margin-bottom:20px;
+	font-size: 18px;
+	display: block;
+	height: 30px;
 }
 /*--flexisel--*/
 .flex-slider{
@@ -2736,7 +2743,7 @@ li>a {
 		font-size: 35px;
 	}
 	.trend-ltpwrlayouts h4, .services-agileits-ltpwrlayouts h4 {
-		font-size: 24px;
+		font-size: 20px;
 	}
 	.service-grid-agileits {
 		float: left;
@@ -2993,6 +3000,7 @@ li>a {
 		z-index: 6;
 		opacity: 0.7;
 		mix-blend-mode: soft-light;
+		pointer-events: none;
 	}
 	[class*="small-dialog"] {
 		max-width: 80%;
